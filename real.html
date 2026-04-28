@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Swift Recharge: Recarga de celular rápida y segura por WhatsApp. Saldo, datos, minutos y paquetes al instante.">
+  <meta name="keywords" content="recarga celular, swift recharge, recarga por whatsapp, recarga datos colombia, recarga instantanea">
+  <title>Swift Recharge • Recarga de Celular Rápida y Segura</title>
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  
+  <style>
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+    }
+    .heading {
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    
+    .hero-bg {
+      background: linear-gradient(135deg, #0f172a 0%, #1e2937 50%, #0ea5e9 100%);
+    }
+    
+    .card {
+      background: #1e2937;
+      border: 2px solid #22d3ee;
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+   
+    .card:hover {
+      border-color: #67e8f9;
+      box-shadow: 0 20px 25px -5px rgba(103, 232, 249, 0.4),
+                  0 10px 10px -5px rgba(103, 232, 249, 0.2);
+      transform: translateY(-8px);
+    }
+    
+    .neon-button {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+   
+    .neon-button:hover {
+      box-shadow: 0 0 30px #67e8f9,
+                  0 0 60px #22d3ee;
+      transform: scale(1.05);
+    }
+    
+    .step-number {
+      background: linear-gradient(135deg, #22d3ee, #67e8f9);
+      color: #0f172a;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200 overflow-x-hidden">
 
+  <!-- HEADER -->
+  <header class="bg-zinc-900 border-b border-zinc-800 sticky top-0 z-50 shadow-sm">
+    <div class="max-w-7xl mx-auto px-5 py-5 flex justify-between items-center">
+      <div class="flex items-center gap-3">
+        <div class="w-11 h-11 bg-gradient-to-br from-cyan-400 to-emerald-400 rounded-2xl flex items-center justify-center text-3xl shadow-lg">
+          ⚡
+        </div>
+        <span class="heading text-3xl md:text-4xl font-bold tracking-tighter text-white">
+          SWIFT <span class="text-cyan-400">RECHARGE</span>
+        </span>
+      </div>
+      
+      <a href="https://wa.me/3150024973"
+         target="_blank"
+         class="bg-[#25D366] text-white px-6 py-3 rounded-2xl font-semibold flex items-center gap-2 hover:bg-[#20ba5a] transition-all text-sm md:text-base">
+        <i class="fab fa-whatsapp text-xl"></i>
+        <span class="hidden sm:inline">WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg min-h-[100dvh] flex items-center relative text-white overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 text-center pt-16 md:pt-0">
+      <h1 class="heading hero-title text-[3.6rem] md:text-[6.4rem] lg:text-[7rem] leading-none font-bold tracking-tighter mb-6">
+        SWIFT <span class="text-cyan-300">RECHARGE</span>
+      </h1>
+     
+      <p class="text-2xl md:text-4xl max-w-3xl mx-auto font-light mb-12">
+        Recarga tu celular en segundos.<br>Rápido, seguro y sin complicaciones.
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
+        <a href="#servicios"
+           class="neon-button bg-transparent border-4 border-cyan-400 text-white hover:text-cyan-400 hover:border-cyan-300 font-bold text-xl md:text-2xl px-12 py-7 rounded-3xl transition-all tracking-wider">
+          VER SERVICIOS
+        </a>
+    
+        <a href="https://wa.me/3150024973"
+           target="_blank"
+           class="neon-button bg-emerald-400 hover:bg-emerald-300 text-zinc-950 font-bold text-xl md:text-2xl px-12 py-7 rounded-3xl transition-all tracking-wider shadow-2xl">
+          RECARGAR AHORA
+        </a>
+      </div>
+      
+      <p class="mt-14 text-cyan-200 text-lg font-medium flex items-center justify-center gap-2">
+        <i class="fas fa-bolt text-emerald-400"></i> 
+        Recarga en menos de 60 segundos • Disponible 24/7
+      </p>
+    </div>
+  </section>
+
+  <!-- CÓMO FUNCIONA -->
+  <section id="como-funciona" class="py-20 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="heading text-4xl md:text-5xl font-bold text-white">¿Cómo funciona?</h2>
+        <p class="text-zinc-400 mt-4 text-xl">Solo 3 pasos simples</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <div class="step-number w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 shadow-xl">1</div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Escríbenos</h3>
+          <p class="text-zinc-400">Envía tu número, operador y el monto deseado.</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="step-number w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 shadow-xl">2</div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">Realiza el pago</h3>
+          <p class="text-zinc-400">Te enviamos los datos seguros (Nequi o transferencia).</p>
+        </div>
+        
+        <div class="text-center">
+          <div class="step-number w-16 h-16 rounded-2xl flex items-center justify-center text-3xl mx-auto mb-6 shadow-xl">3</div>
+          <h3 class="text-2xl font-semibold mb-3 text-white">¡Saldo listo!</h3>
+          <p class="text-zinc-400">La recarga llega en menos de 60 segundos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-20 bg-zinc-900">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center mb-16">
+        <h2 class="heading text-4xl md:text-5xl font-bold text-white">Nuestros Servicios</h2>
+        <p class="text-zinc-400 mt-4 text-lg">Recargas rápidas para Claro, Movistar y Tigo</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="card rounded-3xl p-8 text-center">
+          <div class="text-5xl mb-6">💰</div>
+          <h3 class="text-cyan-400 text-2xl font-bold mb-4">Saldo Principal</h3>
+          <p class="text-zinc-400 leading-relaxed">Para llamadas, SMS y uso general.</p>
+        </div>
+      
+        <div class="card rounded-3xl p-8 text-center">
+          <div class="text-5xl mb-6">📶</div>
+          <h3 class="text-cyan-400 text-2xl font-bold mb-4">Paquetes de Datos</h3>
+          <p class="text-zinc-400 leading-relaxed">Internet diario, semanal y mensual.</p>
+        </div>
+      
+        <div class="card rounded-3xl p-8 text-center">
+          <div class="text-5xl mb-6">📞</div>
+          <h3 class="text-cyan-400 text-2xl font-bold mb-4">Minutos y SMS</h3>
+          <p class="text-zinc-400 leading-relaxed">Llamadas locales y nacionales.</p>
+        </div>
+        
+        <div class="card rounded-3xl p-8 text-center">
+          <div class="text-5xl mb-6">⚡</div>
+          <h3 class="text-cyan-400 text-2xl font-bold mb-4">Recarga Instantánea</h3>
+          <p class="text-zinc-400 leading-relaxed">Saldo activo en menos de 60 segundos.</p>
+        </div>
+      
+        <div class="card rounded-3xl p-8 text-center">
+          <div class="text-5xl mb-6">🌙</div>
+          <h3 class="text-cyan-400 text-2xl font-bold mb-4">Servicio 24/7</h3>
+          <p class="text-zinc-400 leading-relaxed">Disponible cualquier hora del día.</p>
+        </div>
+      
+        <div class="card rounded-3xl p-8 text-center">
+          <div class="text-5xl mb-6">📱</div>
+          <h3 class="text-cyan-400 text-2xl font-bold mb-4">Múltiples Líneas</h3>
+          <p class="text-zinc-400 leading-relaxed">Recarga varias líneas al mismo tiempo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section id="contacto" class="py-24 bg-gradient-to-br from-cyan-500 via-emerald-500 to-teal-600 text-white text-center">
+    <div class="max-w-4xl mx-auto px-6">
+      <h2 class="heading text-4xl md:text-5xl font-bold mb-6">¿Listo para recargar?</h2>
+      <p class="text-2xl mb-12">Escríbenos por WhatsApp y tu recarga estará lista en segundos</p>
+    
+      <a href="https://wa.me/3150024973?text=Hola%2C%20quiero%20hacer%20una%20recarga"
+         target="_blank"
+         class="inline-flex items-center gap-4 bg-white text-zinc-950 font-bold text-2xl px-16 py-8 rounded-3xl hover:bg-emerald-300 transition-all shadow-2xl">
+        <i class="fab fa-whatsapp text-6xl"></i>
+        RECARGAR POR WHATSAPP
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-black text-zinc-500 py-14">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p class="text-cyan-400 font-semibold text-xl mb-3">
+        WhatsApp: <a href="https://wa.me/3150024973" target="_blank" class="hover:underline">+57 315 002 4973</a>
+      </p>
+      <p class="text-sm mt-8">
+        © 2026 Swift Recharge • Recargas rápidas, seguras y confiables
+      </p>
+    </div>
+  </footer>
+
+  <!-- Botón WhatsApp Flotante -->
+  <a href="https://wa.me/3150024973"
+     target="_blank"
+     class="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#20ba5a] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-4xl z-[9999] transition-all hover:scale-110">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html>
